@@ -8,6 +8,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        pretendard: ["var(--font-pretendard)", "sans-serif"],
+        roboto: ["var(--font-roboto)", "sans-serif"],
+      },
       colors: {},
     },
   },
