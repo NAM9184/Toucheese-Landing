@@ -9,7 +9,12 @@
   --background-color-21: #fff0ce; /* 21% */
   --background-color-45: #fffcf6; /* 45% */
   --background-color-76: #fffcf5; /* 76% */
-  --background-color-100: #fffaef; /* 100% */
+  --background-color-100: #ffffff; /* 100% */
+}
+
+html {
+  overflow-x: hidden;
+  transition: all 0.3s;
 }
 .hero-background {
   background: linear-gradient(
@@ -20,6 +25,16 @@
     var(--background-color-76) 76%,
     var(--background-color-100) 100%
   );
+  box-shadow: 100px 100px 20px rgba(255, 252, 246, 0.5),
+    0 10px 40px rgba(255, 255, 255, 1);
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (prefers-color-scheme: dark) {

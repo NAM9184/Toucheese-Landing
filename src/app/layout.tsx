@@ -27,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${pretendard.variable} ${roboto.variable}`}>
-      <body className="font-pretendard">{children}</body>
+      <body className="font-pretendard" style={{ borderTopStyle: "solid" }}>
+        {children}
+      </body>
     </html>
   );
 }

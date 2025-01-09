@@ -11,14 +11,43 @@ export default function Home() {
   useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
-        ".section",
+        ".hero-text",
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          scrollTrigger: {
+            trigger: ".hero-text",
+            start: "top center",
+          },
+        }
+      );
+      gsap.fromTo(
+        ".hero-image",
+        { opacity: 0 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5,
+          delay: 0.5,
+          scrollTrigger: {
+            trigger: ".hero-image",
+            start: "top center",
+          },
+        }
+      );
+
+      gsap.fromTo(
+        ".about-section",
         { opacity: 0, y: 50 },
         {
           opacity: 1,
           y: 0,
           duration: 1,
           scrollTrigger: {
-            trigger: ".section",
+            trigger: ".about-section",
             start: "top center",
             end: "bottom center",
             scrub: true,
