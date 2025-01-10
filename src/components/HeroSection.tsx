@@ -5,9 +5,9 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="relative hero-background py-32">
-      <div className="container relative z-10 flex flex-col md:flex-row justify-center items-center md:items-start gap-8">
-        <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4">
+    <section className="relative hero-background ">
+      <div className="relative z-10  container flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8">
+        <div className="flex flex-col items-center md:items-stretch text-center md:text-left gap-4">
           <div className="hero-text">
             <h1 className="text-xl md:text-4xl font-bold text-yellow-400 mb-4">
               스튜디오 고민은 그만!
@@ -17,7 +17,7 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <div className="flex gap-4 mt-8">
+          <div className="flex mt-auto">
             <Link
               href="https://play.google.com/store/apps/details?id=com.toucheese.app&pcampaignid=web_share"
               className="relative w-36 sm:w-48 h-12 sm:h-14"
@@ -44,8 +44,7 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* 이미지 영역 */}
-        <div className="hero-image relative w-72 sm:w-96 h-96 sm:h-[600px] z-50">
+        <div className="hero-image relative w-80 sm:w-96 h-96 sm:h-[600px] z-50">
           <Image
             src="/hero.png"
             alt="Hero Image"
