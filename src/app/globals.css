@@ -32,9 +32,10 @@ html {
 .container {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 8rem 1rem;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100vh;
 }
 
 @media (prefers-color-scheme: dark) {
