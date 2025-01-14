@@ -34,24 +34,24 @@ export default function AboutSection() {
   return (
     <section
       ref={sectionRef}
-      className="container flex flex-col md:flex-row justify-center gap-4"
+      className="pt-32 container flex flex-col md:flex-row justify-between gap-4"
     >
-      <div className="flex flex-col md:gap-4">
-        <p className="text-xl md:text-4xl font-bold">가까운 지역! </p>
-        <p className="text-xl md:text-4xl">합리적인 가격!</p>
-        <p className="text-xl md:text-4xl font-bold">
-          비교해보면서 찾아보아요!
+      <div className="hero-text flex flex-col md:gap-2">
+        <p className="text-xl md:text-4xl font-semibold ">원하는 지역!</p>
+        <p className="text-lg md:text-4xl font-semibold">합리적인 가격!</p>
+        <p className="text-lg md:text-4xl font-bold  text-yellow-400">
+          원하는 조건에 맞는 맟춤 필터링!
         </p>
       </div>
 
-      <div className="md:ml-auto mx-auto z-50">
-        <div className="md:ml-auto hero-image relative w-80 md:w-96 h-[400px] md:h-[600px]">
+      <div className="">
+        <div className="hero-image relative w-80 md:w-96 h-[400px] md:h-[600px]">
           <Image
             src="/section2.png"
             alt="Hero Image"
             unoptimized
             fill
-            className="object-cover"
+            className="object-contain"
             sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
             quality={75}
           />
