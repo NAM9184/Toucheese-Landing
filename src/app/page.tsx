@@ -7,7 +7,7 @@ import AboutSection from "@/components/AboutSection";
 import { useEffect } from "react";
 import gsap from "gsap";
 import Section3 from "@/components/Section3";
-import Section4 from "@/components/Section4";
+// import Section4 from "@/components/Section4";
 export default function Home() {
   useEffect(() => {
     const ctx = gsap.context(() => {
