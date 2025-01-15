@@ -67,16 +67,16 @@ export default function Section3() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative pt-32 container h-[200vh]">
+    <section ref={sectionRef} className="relative pt-32 container h-[150vh]">
       <div className="mx-auto w-1/2">
         {/* 텍스트 */}
         <div
           ref={textRef}
           className="hero-text flex flex-col md:gap-4 top-32 text-center"
         >
-          <p className="text-xl md:text-4xl font-semibold">원하는 촬영상품</p>
+          <p className="text-xl md:text-4xl font-semibold">원하는 촬영을</p>
           <p className="text-lg md:text-4xl font-semibold ">원하는 시간에</p>
-          <p className="text-lg md:text-4xl font-bold">필요하다면? 옵션도!</p>
+          <p className="text-lg md:text-4xl font-bold">옵션도 추가해서!</p>
         </div>
 
         {/* 이미지 */}

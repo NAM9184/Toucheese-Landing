@@ -35,8 +35,8 @@ export default function AboutSection() {
       );
 
       gsap.fromTo(
-        images[0],
-        { opacity: 0, y: 50 }, // 초기 상태
+        images,
+        { opacity: 0, y: 0 },
         {
           opacity: 1,
           scale: 1,
@@ -44,9 +44,9 @@ export default function AboutSection() {
           duration: 1,
           scrollTrigger: {
             trigger: sectionRef.current,
-            start: "top 90%", // 섹션 진입 시점
-            end: "top 75%",
-            once: true, // 한 번만 실행
+            start: "top 90%",
+            end: "bottom",
+            once: true,
           },
         }
       );
@@ -56,7 +56,7 @@ export default function AboutSection() {
   return (
     <section
       ref={sectionRef}
-      className="relative pt-32 container flex flex-col md:flex-row justify-between gap-4" // 섹션 높이 설정
+      className="relative px-2 md:px-4 z-10 container flex flex-col md:flex-row md:justify-between items-center md:items-stretch gap-8"
     >
       {/* 텍스트 */}
       <div
@@ -70,17 +70,13 @@ export default function AboutSection() {
         </p>
       </div>
 
-      {/* 이미지 컨테이너 */}
-      <div
-        ref={imageContainerRef}
-        className="hero-image relative w-80 md:w-96 h-[400px] md:h-[600px] flex flex-col"
-      >
+      <div className="relative hero-image w-80 sm:w-96 h-96 sm:h-[600px] z-50">
         <Image
           src="/section2.png"
           alt="Hero Image 1"
           unoptimized
           fill
-          className="object-contain"
+          className="object-contain md:object-cover overflow-visible"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
           quality={75}
         />
