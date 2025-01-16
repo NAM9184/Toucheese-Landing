@@ -70,13 +70,13 @@ export default function AboutSection() {
         </p>
       </div>
 
-      <div className="relative hero-image w-80 sm:w-96 h-96 sm:h-[600px] z-50">
+      <div className="relative hero-image w-78 sm:w-96 h-96 sm:h-[600px] z-50">
         <Image
           src="/section2.png"
           alt="Hero Image 1"
           unoptimized
           fill
-          className="object-contain md:object-cover overflow-visible"
+          className="object-contain overflow-visible"
           sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
           quality={75}
         />

@@ -34,8 +34,8 @@ export default function Section4() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="section4 relative pt-32 m-4">
-      <div className="mx-auto flex md:flex-row flex-col gap-4 w-full md:justify-center bg-yellow-400 rounded-lg p-4 items-center">
+    <section ref={sectionRef} className="section4 pt-10 relative m-4">
+      <div className="mx-auto flex md:flex-row flex-col gap-4 w-full md:justify-evenly bg-yellow-400 rounded-lg p-4 items-center">
         {/* 텍스트 */}
         <div ref={textRef} className="flex flex-col md:gap-4 ">
           <p className="text-xl md:text-4xl font-semibold">
@@ -76,10 +76,10 @@ export default function Section4() {
         </div>
         <div
           ref={imageContainerRef}
-          className="hero-image relative h-[400px] w-1/2 flex justify-center items-center"
+          className="hero-image relative h-[400px] w-96 flex  items-center"
         >
           <Image
-            src="/section3.png"
+            src="/skew.png"
             alt="Hero Image"
             unoptimized
             fill
